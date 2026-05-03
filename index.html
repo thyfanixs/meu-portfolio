@@ -23,7 +23,6 @@
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -34,7 +33,6 @@
       cursor: none;
     }
 
-    /* Custom Cursor */
     .cursor {
       width: 12px; height: 12px;
       background: var(--accent);
@@ -56,7 +54,6 @@
       opacity: 0.5;
     }
 
-    /* Grid background */
     body::before {
       content: '';
       position: fixed;
@@ -69,7 +66,6 @@
       z-index: 0;
     }
 
-    /* Noise overlay */
     body::after {
       content: '';
       position: fixed;
@@ -80,7 +76,6 @@
       opacity: 0.4;
     }
 
-    /* Navigation */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -101,15 +96,9 @@
       color: var(--accent);
       letter-spacing: -0.02em;
     }
-
     .nav-logo span { color: var(--text); }
 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
-
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
@@ -118,10 +107,8 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
-
     .nav-links a:hover { color: var(--accent); }
 
-    /* Hero */
     #hero {
       min-height: 100vh;
       display: flex;
@@ -139,7 +126,6 @@
       pointer-events: none;
       animation: pulse 6s ease-in-out infinite;
     }
-
     .hero-blob2 {
       position: absolute;
       width: 400px; height: 400px;
@@ -171,7 +157,6 @@
       margin-bottom: 2rem;
       animation: fadeInUp 0.6s ease both;
     }
-
     .hero-tag::before {
       content: '';
       width: 6px; height: 6px;
@@ -194,12 +179,10 @@
       margin-bottom: 1.5rem;
       animation: fadeInUp 0.6s 0.1s ease both;
     }
-
     h1 .outline {
       -webkit-text-stroke: 1px var(--accent);
       color: transparent;
     }
-
     h1 .highlight { color: var(--accent); }
 
     .hero-desc {
@@ -210,7 +193,6 @@
       margin-bottom: 2.5rem;
       animation: fadeInUp 0.6s 0.2s ease both;
     }
-
     .hero-desc strong { color: var(--text); }
 
     .hero-cta {
@@ -234,7 +216,6 @@
       transition: all 0.2s;
       clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     }
-
     .btn-primary:hover {
       background: #00ffc8;
       transform: translateY(-2px);
@@ -252,11 +233,7 @@
       transition: all 0.2s;
       clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     }
-
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
     .hero-stats {
       position: absolute;
@@ -267,11 +244,7 @@
       gap: 1.5rem;
       animation: fadeInUp 0.6s 0.4s ease both;
     }
-
-    .stat {
-      text-align: right;
-    }
-
+    .stat { text-align: right; }
     .stat-num {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -279,7 +252,6 @@
       color: var(--accent);
       line-height: 1;
     }
-
     .stat-label {
       font-size: 0.65rem;
       color: var(--muted);
@@ -292,7 +264,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Scrolling banner */
     .ticker {
       background: var(--accent);
       padding: 0.7rem 0;
@@ -301,12 +272,10 @@
       position: relative;
       z-index: 1;
     }
-
     .ticker-inner {
       display: inline-block;
       animation: ticker 25s linear infinite;
     }
-
     .ticker span {
       color: var(--bg);
       font-size: 0.75rem;
@@ -315,17 +284,13 @@
       text-transform: uppercase;
       margin-right: 3rem;
     }
-
-    .ticker span::before {
-      content: '▸ ';
-    }
+    .ticker span::before { content: '▸ '; }
 
     @keyframes ticker {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
 
-    /* Sections */
     section {
       position: relative;
       z-index: 1;
@@ -338,46 +303,30 @@
       gap: 1rem;
       margin-bottom: 3.5rem;
     }
-
-    .section-num {
-      font-size: 0.7rem;
-      color: var(--accent);
-      letter-spacing: 0.1em;
-      font-weight: 700;
-    }
-
+    .section-num { font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em; font-weight: 700; }
     .section-title {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       letter-spacing: -0.03em;
     }
-
-    .section-line {
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
+    .section-line { flex: 1; height: 1px; background: var(--border); }
 
     /* About */
     #about { max-width: 1200px; margin: 0 auto; }
-
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
     }
-
     .about-text p {
       color: var(--muted);
       line-height: 1.9;
       font-size: 0.88rem;
       margin-bottom: 1.2rem;
     }
-
     .about-text p strong { color: var(--text); }
-
     .quote-box {
       background: var(--card);
       border-left: 3px solid var(--accent);
@@ -388,7 +337,6 @@
       font-size: 0.85rem;
       line-height: 1.7;
     }
-
     .quote-box cite {
       display: block;
       color: var(--accent);
@@ -398,12 +346,8 @@
       letter-spacing: 0.05em;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .skills-grid .skill-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
     .skill-item {
       background: var(--card);
       border: 1px solid var(--border);
@@ -412,7 +356,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .skill-item::before {
       content: '';
       position: absolute;
@@ -423,25 +366,10 @@
       transform-origin: left;
       transition: transform 0.3s;
     }
-
     .skill-item:hover::before { transform: scaleX(1); }
     .skill-item:hover { border-color: rgba(0,245,160,0.3); }
-
-    .skill-name {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.05em;
-    }
-
-    .skill-bar {
-      height: 3px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
+    .skill-name { font-size: 0.75rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+    .skill-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
     .skill-fill {
       height: 100%;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -449,29 +377,132 @@
       animation: fillBar 1.5s ease both;
       animation-play-state: paused;
     }
-
     .skill-fill.animate { animation-play-state: running; }
-
-    @keyframes fillBar {
-      from { width: 0 !important; }
-    }
-
-    .skill-pct {
-      font-size: 0.65rem;
-      color: var(--muted);
-      margin-top: 0.3rem;
-      text-align: right;
-    }
+    @keyframes fillBar { from { width: 0 !important; } }
+    .skill-pct { font-size: 0.65rem; color: var(--muted); margin-top: 0.3rem; text-align: right; }
 
     /* Projects */
     #projects { max-width: 1200px; margin: 0 auto; }
 
-    .projects-grid {
+    /* Card destaque — Finly */
+    .project-card-featured {
+      background: var(--card);
+      border: 1px solid rgba(0,245,160,0.4);
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+      margin-bottom: 1.5rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .project-card-featured::before {
+      content: 'DESTAQUE';
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      padding: 0.2rem 0.6rem;
+    }
+    .project-card-featured::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,245,160,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .project-card-featured:hover {
+      border-color: rgba(0,245,160,0.7);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0,245,160,0.08);
+      transform: translateY(-4px);
     }
 
+    .featured-left {}
+    .featured-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+      color: var(--accent);
+    }
+    .featured-subtitle {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .featured-subtitle strong { color: var(--text); }
+
+    .insights-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .insight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .insight-item::before {
+      content: '▸';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.05rem;
+    }
+    .insight-item strong { color: var(--text); }
+
+    .featured-right {
+      background: rgba(0,245,160,0.03);
+      border: 1px solid rgba(0,245,160,0.15);
+      padding: 1.5rem;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .stat-box {
+      text-align: center;
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+    .stat-box-num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .stat-box-label {
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
     .project-card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -479,9 +510,7 @@
       position: relative;
       overflow: hidden;
       transition: all 0.3s;
-      group: true;
     }
-
     .project-card::after {
       content: '';
       position: absolute;
@@ -489,13 +518,11 @@
       background: linear-gradient(135deg, transparent 60%, rgba(0,245,160,0.04));
       pointer-events: none;
     }
-
     .project-card:hover {
       border-color: rgba(0,245,160,0.3);
       transform: translateY(-4px);
       box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,245,160,0.1);
     }
-
     .project-card:hover .project-arrow { transform: translate(3px, -3px); }
 
     .project-top {
@@ -504,7 +531,6 @@
       align-items: flex-start;
       margin-bottom: 1.2rem;
     }
-
     .project-icon {
       width: 44px; height: 44px;
       background: rgba(0,245,160,0.1);
@@ -514,14 +540,12 @@
       justify-content: center;
       font-size: 1.2rem;
     }
-
     .project-arrow {
       color: var(--muted);
       font-size: 1.2rem;
       transition: transform 0.2s;
       text-decoration: none;
     }
-
     .project-title {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
@@ -529,20 +553,9 @@
       margin-bottom: 0.6rem;
       letter-spacing: -0.02em;
     }
-
-    .project-desc {
-      font-size: 0.78rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
-
-    .project-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
+    .project-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; }
+    .project-desc strong { color: var(--text); }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .tag {
       background: rgba(123,94,167,0.15);
       border: 1px solid rgba(123,94,167,0.3);
@@ -552,7 +565,6 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
     }
-
     .tag.green {
       background: rgba(0,245,160,0.1);
       border-color: rgba(0,245,160,0.3);
@@ -562,13 +574,7 @@
     /* Articles */
     #articles { background: var(--surface); }
     #articles .inner { max-width: 1200px; margin: 0 auto; }
-
-    .articles-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
+    .articles-list { display: flex; flex-direction: column; gap: 1rem; }
     .article-card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -581,7 +587,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .article-card::before {
       content: '';
       position: absolute;
@@ -592,10 +597,8 @@
       transform-origin: bottom;
       transition: transform 0.3s;
     }
-
     .article-card:hover { border-color: rgba(0,245,160,0.2); transform: translateX(4px); }
     .article-card:hover::before { transform: scaleY(1); }
-
     .article-num {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -604,9 +607,7 @@
       min-width: 60px;
       line-height: 1;
     }
-
     .article-body { flex: 1; }
-
     .article-title {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
@@ -615,27 +616,12 @@
       margin-bottom: 0.3rem;
       letter-spacing: -0.01em;
     }
-
-    .article-meta {
-      font-size: 0.7rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-    }
-
-    .article-arrow {
-      color: var(--muted);
-      font-size: 1.2rem;
-      transition: all 0.2s;
-    }
-
-    .article-card:hover .article-arrow {
-      color: var(--accent);
-      transform: translateX(4px);
-    }
+    .article-meta { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
+    .article-arrow { color: var(--muted); font-size: 1.2rem; transition: all 0.2s; }
+    .article-card:hover .article-arrow { color: var(--accent); transform: translateX(4px); }
 
     /* Contact */
     #contact { max-width: 900px; margin: 0 auto; text-align: center; }
-
     .contact-big {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -644,12 +630,7 @@
       letter-spacing: -0.04em;
       margin-bottom: 1.5rem;
     }
-
-    .contact-big .outline {
-      -webkit-text-stroke: 1px var(--accent);
-      color: transparent;
-    }
-
+    .contact-big .outline { -webkit-text-stroke: 1px var(--accent); color: transparent; }
     .contact-sub {
       color: var(--muted);
       font-size: 0.85rem;
@@ -659,14 +640,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
+    .social-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
     .social-link {
       display: flex;
       align-items: center;
@@ -682,14 +656,8 @@
       transition: all 0.2s;
       clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
     }
+    .social-link:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,245,160,0.05); }
 
-    .social-link:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(0,245,160,0.05);
-    }
-
-    /* Footer */
     footer {
       position: relative;
       z-index: 1;
@@ -699,16 +667,9 @@
       justify-content: space-between;
       align-items: center;
     }
-
-    footer p {
-      font-size: 0.7rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-    }
-
+    footer p { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
     footer .accent { color: var(--accent); }
 
-    /* Terminal easter egg */
     .terminal-badge {
       position: fixed;
       bottom: 2rem;
@@ -722,12 +683,7 @@
       z-index: 100;
       animation: fadeInUp 1s 1s ease both;
     }
-
-    .terminal-badge::before {
-      content: '> ';
-      color: var(--muted);
-    }
-
+    .terminal-badge::before { content: '> '; color: var(--muted); }
     .cursor-blink {
       display: inline-block;
       width: 7px; height: 12px;
@@ -737,7 +693,6 @@
       animation: blink 1s step-end infinite;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
@@ -747,6 +702,7 @@
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
+      .project-card-featured { grid-template-columns: 1fr; gap: 2rem; }
       .article-num { display: none; }
       footer { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
@@ -757,7 +713,6 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- Navigation -->
   <nav>
     <div class="nav-logo">ThyfaniXavier<span>.data</span></div>
     <ul class="nav-links">
@@ -768,7 +723,6 @@
     </ul>
   </nav>
 
-  <!-- Hero -->
   <section id="hero">
     <div class="hero-blob"></div>
     <div class="hero-blob2"></div>
@@ -780,7 +734,7 @@
         <span class="highlight">Data.</span>
       </h1>
       <p class="hero-desc">
-        Analista de Dados Jr. transformando <strong>números em narrativas</strong> e ruído em insight. Apaixonada por dados, pipelines limpos, IA e perguntas que valem a pena responder.
+        Analista de Dados Jr. transformando <strong>números em narrativas</strong> e ruído em insight. Apaixonada por dados, LLMs locais, pipelines limpos e perguntas que valem a pena responder.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">Ver Projetos</a>
@@ -789,7 +743,7 @@
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">8+</div>
+        <div class="stat-num">9+</div>
         <div class="stat-label">Repositórios</div>
       </div>
       <div class="stat">
@@ -803,19 +757,19 @@
     </div>
   </section>
 
-  <!-- Ticker -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-inner">
       <span>Python</span><span>Power BI</span><span>SQL</span><span>Análise RFM</span>
-      <span>Pipeline de Prospecção</span><span>Machine Learning</span><span>Data Storytelling</span>
-      <span>JavaScript</span><span>Visualização de Dados</span><span>Medium Writer</span>
+      <span>LLMs Locais</span><span>Ollama</span><span>Machine Learning</span>
+      <span>Data Storytelling</span><span>Plotly</span><span>Streamlit</span>
+      <span>Visualização de Dados</span><span>Medium Writer</span>
       <span>Python</span><span>Power BI</span><span>SQL</span><span>Análise RFM</span>
-      <span>Pipeline de Prospecção</span><span>Machine Learning</span><span>Data Storytelling</span>
-      <span>JavaScript</span><span>Visualização de Dados</span><span>Medium Writer</span>
+      <span>LLMs Locais</span><span>Ollama</span><span>Machine Learning</span>
+      <span>Data Storytelling</span><span>Plotly</span><span>Streamlit</span>
+      <span>Visualização de Dados</span><span>Medium Writer</span>
     </div>
   </div>
 
-  <!-- About -->
   <section id="about">
     <div class="section-header">
       <span class="section-num">01.</span>
@@ -826,7 +780,7 @@
       <div class="about-text">
         <p>Oi! Sou <strong>Thyfani Xavier</strong>, analista de dados que acredita que todo dataset esconde uma história esperando para ser contada.</p>
         <p>Trabalho na interseção entre <strong>dados brutos e decisões inteligentes</strong> — criando pipelines, construindo análises e escrevendo sobre tudo isso no Medium para compartilhar o que aprendo.</p>
-        <p>Tenho experiência com <strong>Python, SQL e Power BI</strong>, e gosto de usar a criatividade tanto no código quanto na forma de comunicar os resultados.</p>
+        <p>Tenho experiência com <strong>Python, SQL e Power BI</strong>, e recentemente mergulhei no universo de <strong>LLMs locais</strong> — construindo projetos que rodam IA sem depender de APIs pagas ou dados na nuvem.</p>
         <div class="quote-box">
           "Se você é um pássaro, eu sou um pássaro."
           <cite>— Thyfani Xavier</cite>
@@ -835,39 +789,33 @@
       <div class="skills-grid">
         <div class="skill-item">
           <div class="skill-name">Python</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-          <div class="skill-pct">20%</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:20%"></div></div>
+          <div class="skill-pct">20% — leio bem, uso com IA</div>
         </div>
         <div class="skill-item">
           <div class="skill-name">SQL</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-          <div class="skill-pct">50%</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          <div class="skill-pct">65% — consultas, joins, subqueries</div>
         </div>
         <div class="skill-item">
-          <div class="skill-name">Power BI</div>
+          <div class="skill-name">Power BI + Power Query</div>
           <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
-          <div class="skill-pct">78%</div>
+          <div class="skill-pct">78% — modelagem, DAX, ETL</div>
         </div>
         <div class="skill-item">
-          <div class="skill-name">JavaScript</div>
+          <div class="skill-name">LLMs / IA Aplicada</div>
           <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
-          <div class="skill-pct">10%</div>
+          <div class="skill-pct">60% — prompt eng., APIs, tokens</div>
         </div>
         <div class="skill-item">
-          <div class="skill-name">Data Viz</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
-          <div class="skill-pct">82%</div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">Machine Learning</div>
-          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
-          <div class="skill-pct">20%</div>
+          <div class="skill-name">SSIS + Banco de Dados</div>
+          <div class="skill-bar"><div class="skill-fill" style="width:20%"></div></div>
+          <div class="skill-pct">20% — iniciando</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
   <section id="projects" style="background: var(--surface);">
     <div style="max-width:1200px; margin: 0 auto;">
       <div class="section-header">
@@ -875,7 +823,87 @@
         <h2 class="section-title">Projetos</h2>
         <div class="section-line"></div>
       </div>
+
+      <!-- Finly — card destaque -->
+      <div class="project-card-featured">
+        <div class="featured-left">
+          <div class="featured-title">💰 Finly</div>
+          <p class="featured-subtitle">
+            Analista financeiro pessoal com <strong>LLM local</strong> — sem dados na nuvem, sem custo de API.
+            Sobe um extrato bancário e a IA categoriza, detecta padrões e responde perguntas em português.
+          </p>
+          <div class="insights-list">
+            <div class="insight-item"><strong>Delivery 2.1x mais caro nas sextas</strong> — padrão comportamental detectado automaticamente</div>
+            <div class="insight-item"><strong>Alimentação na 1ª semana custa 2.4x mais</strong> — dia de mercadão pós-salário</div>
+            <div class="insight-item"><strong>Nov/Dez com +29% acima da média</strong> — sazonalidade de fim de ano</div>
+            <div class="insight-item"><strong>Chat em linguagem natural</strong> — "Quanto gastei em delivery?" gera e executa código Python</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag green">Python</span>
+            <span class="tag green">Ollama</span>
+            <span class="tag green">Llama 3.1</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Plotly</span>
+            <span class="tag">Pandas</span>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="stat-box-num">459</div>
+              <div class="stat-box-label">transações analisadas</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box-num">78%</div>
+              <div class="stat-box-label">acurácia da IA</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box-num">4</div>
+              <div class="stat-box-label">abas no dashboard</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box-num">100%</div>
+              <div class="stat-box-label">local — sem nuvem</div>
+            </div>
+          </div>
+          <a href="https://github.com/thyfanixs/finly" target="_blank" class="btn-primary" style="display:inline-block; width:100%; text-align:center;">
+            Ver no GitHub ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Outros projetos -->
       <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">📊</div>
+            <a href="https://github.com/thyfanixs/Matriz_RFM" target="_blank" class="project-arrow">↗</a>
+          </div>
+          <h3 class="project-title">Matriz RFM ★</h3>
+          <p class="project-desc">Segmentação de clientes por <strong>Recência, Frequência e Valor monetário</strong> no Power BI. Projeto que ganhou destaque na comunidade e gerou um artigo no Medium com centenas de leituras.</p>
+          <div class="project-tags">
+            <span class="tag green">Power BI</span>
+            <span class="tag">RFM</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">Segmentação</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🔍</div>
+            <a href="https://github.com/thyfanixs/Pipeline-de-Prospec-o" target="_blank" class="project-arrow">↗</a>
+          </div>
+          <h3 class="project-title">Pipeline de Prospecção ★★</h3>
+          <p class="project-desc">Pipeline completo para <strong>automação de prospecção de clientes</strong>. Um dos projetos mais estrelados do perfil — estrutura os dados de leads e prioriza contatos com base em métricas de vendas.</p>
+          <div class="project-tags">
+            <span class="tag green">Python</span>
+            <span class="tag">Pipeline</span>
+            <span class="tag">Vendas</span>
+            <span class="tag">CRM</span>
+          </div>
+        </div>
 
         <div class="project-card">
           <div class="project-top">
@@ -883,7 +911,7 @@
             <a href="https://github.com/thyfanixs/IA-SQL" target="_blank" class="project-arrow">↗</a>
           </div>
           <h3 class="project-title">IA-SQL</h3>
-          <p class="project-desc">Integração de Inteligência Artificial com consultas SQL. Projeto que explora como usar IA para gerar, otimizar e interpretar queries automaticamente.</p>
+          <p class="project-desc">Integração de IA com consultas SQL — o modelo <strong>gera, otimiza e interpreta queries automaticamente</strong> a partir de perguntas em linguagem natural.</p>
           <div class="project-tags">
             <span class="tag green">Python</span>
             <span class="tag">IA</span>
@@ -897,7 +925,7 @@
             <a href="https://github.com/thyfanixs/fluxo-aprova-o-investimento" target="_blank" class="project-arrow">↗</a>
           </div>
           <h3 class="project-title">Fluxo de Aprovação de Investimento</h3>
-          <p class="project-desc">Sistema de fluxo automatizado para análise e aprovação de investimentos, com lógica de negócio estruturada em JavaScript.</p>
+          <p class="project-desc">Sistema automatizado de <strong>análise e aprovação de investimentos</strong> com lógica de negócio estruturada — simula o fluxo real de uma mesa de decisão financeira.</p>
           <div class="project-tags">
             <span class="tag green">JavaScript</span>
             <span class="tag">Finanças</span>
@@ -911,7 +939,7 @@
             <a href="https://github.com/thyfanixs/Performance-Ranking" target="_blank" class="project-arrow">↗</a>
           </div>
           <h3 class="project-title">Performance Ranking</h3>
-          <p class="project-desc">Sistema de ranking e avaliação de performance, permitindo comparar e classificar métricas de forma visual e eficiente.</p>
+          <p class="project-desc">Sistema de <strong>ranking e avaliação de performance</strong> — compara e classifica métricas de equipes ou produtos de forma visual, facilitando decisões baseadas em dados.</p>
           <div class="project-tags">
             <span class="tag">Analytics</span>
             <span class="tag">KPIs</span>
@@ -919,55 +947,10 @@
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-icon">🔍</div>
-            <a href="https://github.com/thyfanixs/Pipeline-de-Prospec-o" target="_blank" class="project-arrow">↗</a>
-          </div>
-          <h3 class="project-title">Pipeline de Prospecção ★★</h3>
-          <p class="project-desc">Pipeline completo para automação de prospecção de clientes. Um dos projetos mais estrelados do perfil, com foco em eficiência de vendas orientada a dados.</p>
-          <div class="project-tags">
-            <span class="tag green">Python</span>
-            <span class="tag">Pipeline</span>
-            <span class="tag">Vendas</span>
-            <span class="tag">CRM</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-icon">📊</div>
-            <a href="https://github.com/thyfanixs/Matriz_RFM" target="_blank" class="project-arrow">↗</a>
-          </div>
-          <h3 class="project-title">Matriz RFM ★</h3>
-          <p class="project-desc">Análise RFM (Recência, Frequência, Monetário) para segmentação de clientes. Projeto que ganhou destaque e inspirou um artigo no Medium.</p>
-          <div class="project-tags">
-            <span class="tag green">Power BI</span>
-            <span class="tag">RFM</span>
-            <span class="tag">Marketing</span>
-            <span class="tag">Segmentação</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-icon">🌐</div>
-            <a href="https://github.com/thyfanixs/louvorzao-landing-page" target="_blank" class="project-arrow">↗</a>
-          </div>
-          <h3 class="project-title">Louvorzão Landing Page</h3>
-          <p class="project-desc">Landing page desenvolvida em HTML demonstrando habilidades de desenvolvimento web além da análise de dados.</p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Front-end</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Articles -->
   <section id="articles">
     <div class="inner">
       <div class="section-header">
@@ -1017,7 +1000,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <div class="section-header" style="justify-content: center;">
       <span class="section-num">04.</span>
@@ -1048,17 +1030,14 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 <span class="accent">Thyfani Xavier</span> — Feito com dados e amor</p>
-    <p>Última atualização: <span class="accent">Fev 2026</span></p>
+    <p>Última atualização: <span class="accent">Mai 2026</span></p>
   </footer>
 
-  <!-- Terminal badge -->
   <div class="terminal-badge">analista_de_dados.py<span class="cursor-blink"></span></div>
 
   <script>
-    // Custom cursor
     const cursor = document.getElementById('cursor');
     const cursorRing = document.getElementById('cursorRing');
     let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1091,30 +1070,23 @@
       });
     });
 
-    // Animate skill bars on scroll
     const skillFills = document.querySelectorAll('.skill-fill');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('animate');
       });
     }, { threshold: 0.3 });
-
     skillFills.forEach(fill => observer.observe(fill));
 
-    // Scroll reveal
     const revealEls = document.querySelectorAll('.project-card, .article-card, .skill-item');
     const revealObserver = new IntersectionObserver(entries => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          entry.target.style.animationDelay = (i * 0.05) + 's';
           entry.target.style.animation = 'fadeInUp 0.5s ease both';
           entry.target.style.animationDelay = (i % 4 * 0.08) + 's';
         }
       });
     }, { threshold: 0.1 });
-
     revealEls.forEach(el => revealObserver.observe(el));
   </script>
 </body>
