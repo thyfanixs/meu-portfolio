@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Laboratório de soluções de dados e IA de Thyfani Xavier: ideias, protótipos e ferramentas para problemas reais." />
+  <title>Laboratório — Thyfani Xavier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="laboratorio">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header class="site-nav">
+    <a class="nav-logo" href="index.html">ThyfaniXavier<span>.data</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">menu</button>
+    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+      <a data-nav="home" href="index.html">Início</a>
+      <a data-nav="sobre" href="sobre.html">Sobre</a>
+      <a data-nav="projetos" href="projetos.html">Projetos</a>
+      <a data-nav="laboratorio" href="laboratorio.html">Laboratório</a>
+      <a data-nav="curriculo" href="curriculo.html">Currículo</a>
+      <a data-nav="artigos" href="artigos.html">Artigos</a>
+      <a data-nav="contato" href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <span class="section-num">laboratório.</span>
+      <h1>Uma bancada de soluções pequenas para problemas reais de dados.</h1>
+      <p>Protótipos, ideias e ferramentas em construção para transformar o domínio em mais do que portfólio: um espaço de experimentos úteis em BI, SQL, ETL e IA aplicada.</p>
+    </section>
+
+    <section class="section section-panel lab-board">
+      <div class="lab-featured">
+        <div>
+          <span class="badge">primeiro protótipo</span>
+          <h2>Analisador de CSV e Excel</h2>
+          <p>Uma ferramenta simples para receber uma base, apontar nulos, duplicidades, tipos estranhos, campos suspeitos e primeiras recomendações de tratamento antes do dado virar dashboard.</p>
+          <div class="tag-row"><span>Qualidade</span><span>Excel</span><span>Dados</span><span>IA aplicada</span></div>
+        </div>
+        <div class="lab-status-panel" aria-label="Status do protótipo">
+          <span>status</span>
+          <strong>em desenho</strong>
+          <p>Prioridade para virar demo interativa do thyfani.com.br.</p>
+        </div>
+      </div>
+
+      <div class="lab-flow" aria-label="Esteira do laboratório">
+        <div><strong>01</strong><span>problema real</span></div>
+        <i></i>
+        <div><strong>02</strong><span>protótipo pequeno</span></div>
+        <i></i>
+        <div><strong>03</strong><span>demo no site</span></div>
+        <i></i>
+        <div><strong>04</strong><span>projeto de portfólio</span></div>
+      </div>
+
+      <div class="lab-section">
+        <div class="library-heading">
+          <span class="section-num">em construção.</span>
+          <h2>Ferramentas que combinam com minha stack</h2>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card active">
+            <span class="badge">ETL</span>
+            <div class="lab-icon">ETL</div>
+            <h2>Gerador de Documentação de ETL</h2>
+            <p>Origem, destino e regra de transformação viram documentação técnica e funcional para manutenção.</p>
+            <div class="tag-row"><span>SSIS</span><span>ETL</span><span>Governança</span></div>
+          </article>
+          <article class="lab-card active">
+            <span class="badge">SQL</span>
+            <div class="lab-icon">SQL</div>
+            <h2>Revisor de Query SQL</h2>
+            <p>Explica consultas, aponta riscos de performance e sugere melhorias de clareza.</p>
+            <div class="tag-row"><span>SQL</span><span>IA</span><span>Banco</span></div>
+          </article>
+          <article class="lab-card active">
+            <span class="badge">BI</span>
+            <div class="lab-icon">KPI</div>
+            <h2>Assistente de Indicadores</h2>
+            <p>Transforma necessidade de negócio em KPIs, granularidade, filtros e fontes de dados possíveis.</p>
+            <div class="tag-row"><span>BI</span><span>KPIs</span><span>Negócio</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="lab-section">
+        <div class="library-heading">
+          <span class="section-num">próximas ideias.</span>
+          <h2>Backlog de soluções pequenas</h2>
+        </div>
+        <div class="lab-grid compact">
+          <article class="lab-card">
+            <span class="badge">governança</span>
+            <div class="lab-icon">DIC</div>
+            <h2>Mini Dicionário de Dados</h2>
+            <p>Cadastro simples de tabelas, campos, descrições e regras para dar contexto aos indicadores.</p>
+            <div class="tag-row"><span>Governança</span><span>Catálogo</span></div>
+          </article>
+          <article class="lab-card">
+            <span class="badge">arquitetura</span>
+            <div class="lab-icon">PIPE</div>
+            <h2>Simulador de Pipeline ETL</h2>
+            <p>Visualiza origem, staging, tratamento, validação e carga para explicar arquitetura de dados.</p>
+            <div class="tag-row"><span>Pipeline</span><span>ETL</span></div>
+          </article>
+          <article class="lab-card">
+            <span class="badge">IA + SQL</span>
+            <div class="lab-icon">AI</div>
+            <h2>Tradutor de Pergunta para SQL</h2>
+            <p>Ajuda a estruturar consultas a partir de perguntas simples, com tabelas, filtros e agregações.</p>
+            <div class="tag-row"><span>IA</span><span>SQL</span></div>
+          </article>
+          <article class="lab-card">
+            <span class="badge">Power BI</span>
+            <div class="lab-icon">UX</div>
+            <h2>Checklist de Dashboard</h2>
+            <p>Revisão guiada de objetivo, métrica, regra, filtro, layout e decisão apoiada pelo painel.</p>
+            <div class="tag-row"><span>Power BI</span><span>UX</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="library-cta">
+        <p>O laboratório pode virar a parte mais viva do site: pequenas ferramentas, templates e demos abertas.</p>
+        <a class="btn-primary" href="contato.html">Sugerir uma ideia</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 <span class="accent">Thyfani Xavier</span></p>
+    <p><a href="contato.html">Me chama para falar de uma ideia →</a></p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
