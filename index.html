@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfólio de Thyfani Xavier, analista de dados com projetos em BI, SQL, ETL, SSIS e IA aplicada." />
+  <meta name="goatcounter-code" content="thyfani" />
   <meta property="og:title" content="Thyfani Xavier | Data Analyst Portfolio" />
   <meta property="og:description" content="Do dado bruto ao dashboard, da regra de negócio à solução com IA." />
   <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQHQVKSP62zfww/profile-displayphoto-crop_800_800/B4DZtav37JKAAM-/0/1766754058844?e=1773273600&v=beta&t=nEi2XgB4F4idExoF12gXCXjKYz4wpXlD-rHe1l3GPTU" />
@@ -30,121 +31,38 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero home-hero">
-      <div class="hero-blob"></div>
-      <div class="hero-blob2"></div>
-      <div class="hero-content">
-        <div class="hero-tag">disponível para oportunidades</div>
-        <h1>
-          Thyfani<br />
-          <span class="outline">Xavier</span><br />
-          <span class="highlight">Data.</span>
-        </h1>
-        <p class="hero-desc">
-          Formada em ADM, fui pra área de BI e não parei mais. Hoje sou <strong>Analista de Dados</strong> com 3+ anos construindo pipelines, dashboards e soluções com <strong>IA aplicada</strong>. Entendo o negócio antes de abrir o Power BI.
-        </p>
-        <div class="hero-cta">
-          <a href="laboratorio.html#projetos" class="btn-primary">Ver Projetos</a>
-          <a href="laboratorio.html" class="btn-ghost">Ver Laboratório →</a>
-          <a href="contato.html" class="btn-ghost">Contato →</a>
+  <main class="home-main">
+    <section class="home-stage" id="inicio">
+      <canvas class="data-canvas" id="dataCanvas" aria-hidden="true"></canvas>
+      <div class="home-stage-grid" aria-hidden="true"></div>
+      <div class="home-stage-content">
+        <span class="home-kicker"><i></i> dados · negócio · inteligência artificial</span>
+        <h1>Thyfani<br /><span>Xavier</span></h1>
+        <p>Analista de Dados que transforma regras de negócio em pipelines, dashboards e soluções com IA aplicada.</p>
+        <div class="home-actions">
+          <a class="btn-primary" href="laboratorio.html">Explorar laboratório</a>
+          <a class="home-text-link" href="sobre.html">Conhecer minha trajetória <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <aside class="hero-card">
-        <div class="data-visual" aria-hidden="true">
-          <div class="data-visual-top">
-            <span>pipeline</span>
-            <strong>BI + IA</strong>
-          </div>
-          <div class="flow-row"><span>ERP</span><i></i><span>SQL</span><i></i><span>BI</span></div>
-          <div class="mini-chart">
-            <span style="height: 42%"></span>
-            <span style="height: 68%"></span>
-            <span style="height: 51%"></span>
-            <span style="height: 86%"></span>
-            <span style="height: 74%"></span>
-          </div>
-          <div class="data-note">regra de negócio + dados confiáveis + entrega visual</div>
-        </div>
-        <div class="hero-card-body">
-          <span>foco atual</span>
-          <strong>BI + SQL + SSIS + IA aplicada</strong>
-          <p>Construindo uma vitrine viva de projetos, ideias e soluções pequenas para problemas reais de dados.</p>
-        </div>
-      </aside>
+      <div class="home-signal" aria-label="Resumo do portfólio">
+        <div><strong>6</strong><span>projetos publicados</span></div>
+        <div><strong>3</strong><span>e-books disponíveis</span></div>
+        <div><strong>3+</strong><span>anos com dados</span></div>
+        <div class="visitor-stat" data-visitor-stat hidden><strong data-visitor-count>0</strong><span>visitas ao site</span></div>
+      </div>
+      <a class="home-scroll" href="#caminhos" aria-label="Ir para os caminhos do portfólio"><span></span> explorar</a>
     </section>
 
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-inner">
-        <span>Python</span><span>Power BI</span><span>SQL</span><span>SSIS</span><span>Protheus</span><span>IA Aplicada</span><span>Data Storytelling</span><span>Streamlit</span><span>Governança</span>
-        <span>Python</span><span>Power BI</span><span>SQL</span><span>SSIS</span><span>Protheus</span><span>IA Aplicada</span><span>Data Storytelling</span><span>Streamlit</span><span>Governança</span>
-      </div>
-    </div>
-
-    <section class="section section-panel">
-      <div class="section-header">
-        <span class="section-num">01.</span>
-        <h2 class="section-title">Escolha uma área</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="route-grid">
-        <a class="route-card" href="sobre.html">
-          <span>01</span>
-          <h3>Sobre mim</h3>
-          <p>Minha trajetória: Administração, BI, dados corporativos, IA e workshops.</p>
-        </a>
-        <a class="route-card route-card-featured" href="laboratorio.html#projetos">
-          <span>02</span>
-          <h3>Projetos</h3>
-          <p>Finly, Matriz RFM, IA-SQL, automações e dashboards.</p>
-        </a>
-        <a class="route-card" href="laboratorio.html">
-          <span>03</span>
-          <h3>Laboratório</h3>
-          <p>Ideias de soluçõeszinhas de dados e IA para virar produto, demo ou estudo.</p>
-        </a>
-        <a class="route-card" href="curriculo.html">
-          <span>04</span>
-          <h3>Currículo</h3>
-          <p>Experiências, formação, certificações e stack de trabalho.</p>
-        </a>
-        <a class="route-card" href="artigos.html">
-          <span>05</span>
-          <h3>Artigos</h3>
-          <p>Textos sobre dados, simplicidade, BI e tomada de decisão.</p>
-        </a>
-        <a class="route-card" href="contato.html">
-          <span>06</span>
-          <h3>Contato</h3>
-          <p>LinkedIn, GitHub, Medium e caminho rápido para conversar.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section split-section section-panel soft-panel">
-      <div>
-        <div class="section-header compact">
-          <span class="section-num">agora.</span>
-          <h2 class="section-title">O site vira portfólio e laboratório.</h2>
-        </div>
-        <p class="large-copy">
-          A página inicial fica limpa. Cada assunto ganha espaço próprio. E o domínio deixa de ser só currículo online para virar uma prova prática do que eu sei construir com dados.
-        </p>
-      </div>
-      <div class="terminal-panel">
-        <div class="terminal-top">
-          <span></span><span></span><span></span>
-        </div>
-        <pre><code>portfolio/
-├─ index.html
-├─ sobre.html
-├─ projetos.html
-├─ laboratorio.html
-├─ curriculo.html
-├─ artigos.html
-└─ contato.html</code></pre>
-      </div>
+    <section class="home-paths" id="caminhos">
+      <header>
+        <span class="section-num">por onde começar.</span>
+        <h2>Escolha o que quer conhecer</h2>
+      </header>
+      <nav class="home-path-list" aria-label="Caminhos do portfólio">
+        <a href="laboratorio.html"><span>01</span><strong>Laboratório</strong><p>Projetos reais, e-books e experimentos com dados e IA.</p><i aria-hidden="true">↗</i></a>
+        <a href="sobre.html"><span>02</span><strong>Sobre</strong><p>Minha trajetória entre Administração, tecnologia e ensino.</p><i aria-hidden="true">↗</i></a>
+        <a href="contato.html"><span>03</span><strong>Vamos construir</strong><p>Sites, soluções de dados e novas oportunidades.</p><i aria-hidden="true">↗</i></a>
+      </nav>
     </section>
   </main>
 
