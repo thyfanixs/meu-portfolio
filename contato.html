@@ -20,7 +20,6 @@
     <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
       <a data-nav="home" href="index.html">Início</a>
       <a data-nav="sobre" href="sobre.html">Sobre</a>
-      <a data-nav="projetos" href="projetos.html">Projetos</a>
       <a data-nav="laboratorio" href="laboratorio.html">Laboratório</a>
       <a data-nav="curriculo" href="curriculo.html">Currículo</a>
       <a data-nav="artigos" href="artigos.html">Artigos</a>
@@ -32,10 +31,10 @@
     <section class="contact-hero">
       <span class="section-num">contato.</span>
       <h1>Vamos<br /><span>conversar</span>?</h1>
-      <p>Aberta a oportunidades, colaborações e papos sobre dados, BI, automação, SQL, SSIS e IA aplicada.</p>
+      <p>Precisa de um site, uma solução de dados ou quer conversar sobre uma oportunidade? Preencha os dados e eu entro em contato.</p>
       <div class="contact-layout">
         <form class="contact-form" action="https://formspree.io/f/mbdvogez" method="POST">
-          <input type="hidden" name="_subject" value="Contato pelo thyfani.com.br" />
+          <input type="hidden" name="_subject" value="Novo contato pelo thyfani.com.br" />
           <label>
             Nome
             <input type="text" name="nome" autocomplete="name" required />
@@ -45,19 +44,32 @@
             <input type="email" name="email" autocomplete="email" required />
           </label>
           <label>
-            Mensagem
-            <textarea name="mensagem" rows="5" required placeholder="Me conta rapidinho o contexto, oportunidade ou ideia."></textarea>
+            WhatsApp ou telefone
+            <input type="tel" name="telefone" autocomplete="tel" required placeholder="(00) 00000-0000" />
           </label>
-          <button class="btn-primary" type="submit">Enviar mensagem</button>
-          <p class="form-note">O envio é feito pelo Formspree. Você receberá a mensagem no e-mail configurado lá.</p>
+          <label>
+            Assunto
+            <select name="assunto" required>
+              <option value="">Selecione</option>
+              <option value="Criacao de site">Quero montar um site</option>
+              <option value="Dados e IA">Solução de dados ou IA</option>
+              <option value="Oportunidade profissional">Oportunidade profissional</option>
+              <option value="Outro">Outro assunto</option>
+            </select>
+          </label>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" required placeholder="Conte o que você precisa, para quem é o site e quais páginas ou recursos imagina."></textarea>
+          </label>
+          <button class="btn-primary" type="submit">Solicitar contato</button>
         </form>
         <div class="contact-aside">
           <div class="contact-mini-card">
             <span>resposta</span>
             <strong>Melhor canal</strong>
-            <p>Use o formulário para mensagens diretas e o LinkedIn para networking profissional.</p>
+            <p>Para falar sobre criação de sites, preencha o formulário ou envie uma mensagem direta pelo LinkedIn.</p>
           </div>
-          <a class="btn-ghost email-fallback" href="mailto:?subject=Contato%20pelo%20thyfani.com.br&body=Oi%2C%20Thyfani.%0A%0AVim%20pelo%20thyfani.com.br%20e%20queria%20falar%20sobre%3A%0A%0A">Abrir meu e-mail →</a>
+          <a class="btn-ghost email-fallback" href="https://www.linkedin.com/messaging/compose/?recipient=thyfani-xavier-4b6904142" target="_blank" rel="noreferrer">Chamar no LinkedIn →</a>
         </div>
       </div>
       <div class="social-grid">

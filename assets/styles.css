@@ -398,6 +398,18 @@ h1 .highlight,
   box-shadow: 0 0 24px rgba(0,245,160,0.18);
 }
 
+.about-profile-photo { position: relative; min-height: 560px; overflow: hidden; border: 1px solid var(--border); background: var(--card); }
+.about-profile-photo img { width: 100%; height: 100%; min-height: 560px; object-fit: cover; object-position: center; }
+.about-photo-caption { position: absolute; right: 0; bottom: 0; left: 0; display: grid; gap: 0.25rem; padding: 1rem 1.2rem; background: rgba(7, 10, 14, 0.88); backdrop-filter: blur(8px); }
+.about-photo-caption span { color: var(--accent); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; }
+.about-photo-caption strong { font-family: "Syne", sans-serif; }
+.about-gallery-section { display: grid; gap: 1.4rem; }
+.about-gallery { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.8rem; }
+.about-gallery-item { grid-column: span 2; position: relative; min-height: 320px; margin: 0; overflow: hidden; border: 1px solid var(--border); background: var(--card); }
+.about-gallery-item.gallery-wide { grid-column: span 3; }
+.about-gallery-item img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; transition: transform 220ms ease; }
+.about-gallery-item:hover img { transform: scale(1.02); }
+.about-gallery-item figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 0.8rem 1rem; color: var(--text); background: rgba(7, 10, 14, 0.86); font-size: 0.7rem; font-weight: 700; }
 .identity-panel {
   padding: 1.4rem;
   position: sticky;
@@ -941,6 +953,18 @@ pre {
   min-height: 230px;
 }
 
+.ebook-section { padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.ebook-section .library-heading p { max-width: 720px; color: var(--muted); line-height: 1.7; }
+.ebook-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.ebook-card { display: grid; grid-template-columns: minmax(110px, 0.42fr) minmax(0, 1fr); min-height: 300px; overflow: hidden; border: 1px solid var(--border); background: var(--card); }
+.ebook-cover { display: block; min-height: 100%; overflow: hidden; background: #080b0f; }
+.ebook-cover img { width: 100%; height: 100%; min-height: 300px; object-fit: cover; object-position: center; transition: transform 220ms ease; }
+.ebook-card:hover .ebook-cover img { transform: scale(1.025); }
+.ebook-content { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; padding: 1.2rem; }
+.ebook-content h3 { margin: 0.8rem 0 0.55rem; font-family: "Syne", sans-serif; font-size: 1.3rem; line-height: 1.15; }
+.ebook-content p { margin: 0; color: var(--muted); font-size: 0.78rem; line-height: 1.65; }
+.ebook-link { margin-top: auto; padding-top: 1rem; color: var(--accent); font-size: 0.76rem; font-weight: 700; text-transform: uppercase; }
+.ebook-link:hover { color: var(--text); }
 .timeline,
 .side-list,
 .article-list {
@@ -1267,6 +1291,7 @@ pre {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   border: 1px solid var(--border);
@@ -1278,6 +1303,7 @@ pre {
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
   border-color: rgba(0,245,160,0.65);
   box-shadow: 0 0 0 3px rgba(0,245,160,0.08);
@@ -1441,6 +1467,13 @@ pre {
     max-width: 390px;
   }
 
+  .about-profile-photo { min-height: 440px; }
+  .about-profile-photo img { min-height: 440px; }
+  .about-gallery { grid-template-columns: 1fr; }
+  .about-gallery-item,
+  .about-gallery-item.gallery-wide { grid-column: auto; min-height: 300px; }
+  .about-gallery-item img { min-height: 300px; }
+
   .identity-panel {
     position: static;
   }
@@ -1458,6 +1491,7 @@ pre {
   .project-grid,
   .lab-grid,
   .lab-grid.compact,
+  .ebook-grid,
   .skills-grid,
   .cv-highlights,
   .cv-skill-grid,
@@ -1473,6 +1507,9 @@ pre {
   .lab-flow i {
     display: none;
   }
+
+  .ebook-card { grid-template-columns: minmax(120px, 0.36fr) minmax(0, 1fr); min-height: 280px; }
+  .ebook-cover img { min-height: 280px; }
 
   .section-panel {
     padding: 1.25rem;
