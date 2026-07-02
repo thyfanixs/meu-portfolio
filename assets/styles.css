@@ -1642,3 +1642,38 @@ pre {
   .home-path-list a p { grid-column: 2 / -1; }
 }
 @media (prefers-reduced-motion: reduce) { .data-canvas { display: none; } }
+.page-thought {
+  width: min(1200px, calc(100% - 40px));
+  margin: 1rem auto 5rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.page-thought > span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-thought blockquote {
+  max-width: 900px;
+  margin: 0;
+  color: var(--text);
+  font-family: "Syne", sans-serif;
+  font-size: clamp(1.45rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+.page-thought cite {
+  display: block;
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-style: normal;
+}
+.gospel-thought blockquote { max-width: 980px; }
+@media (max-width: 700px) {
+  .page-thought { width: min(100% - 28px, 1200px); margin-bottom: 3rem; padding: 2.25rem 0; }
+}
