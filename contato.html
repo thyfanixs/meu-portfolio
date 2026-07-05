@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contato de Thyfani Xavier: formulário, LinkedIn, GitHub e Medium." />
+  <title>Contato — Thyfani Xavier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="contato">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header class="site-nav">
+    <a class="nav-logo" href="index.html">ThyfaniXavier<span>.data</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">menu</button>
+    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+      <a data-nav="home" href="index.html">Início</a>
+      <a data-nav="sobre" href="sobre.html">Sobre</a>
+      <a data-nav="laboratorio" href="laboratorio.html">Laboratório</a>
+      <a data-nav="curriculo" href="curriculo.html">Currículo</a>
+      <a data-nav="artigos" href="artigos.html">Artigos</a>
+      <a data-nav="contato" href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="contact-hero">
+      <span class="section-num">contato.</span>
+      <h1>Vamos<br /><span>conversar</span>?</h1>
+      <p>Precisa de um site, uma solução de dados ou quer conversar sobre uma oportunidade? Preencha os dados e eu entro em contato.</p>
+      <div class="contact-layout">
+        <form class="contact-form" action="https://formspree.io/f/mbdvogez" method="POST">
+          <input type="hidden" name="_subject" value="Novo contato pelo thyfani.com.br" />
+          <label>
+            Nome
+            <input type="text" name="nome" autocomplete="name" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            WhatsApp ou telefone
+            <input type="tel" name="telefone" autocomplete="tel" required placeholder="(00) 00000-0000" />
+          </label>
+          <label>
+            Assunto
+            <select name="assunto" required>
+              <option value="">Selecione</option>
+              <option value="Criacao de site">Quero montar um site</option>
+              <option value="Dados e IA">Solução de dados ou IA</option>
+              <option value="Oportunidade profissional">Oportunidade profissional</option>
+              <option value="Outro">Outro assunto</option>
+            </select>
+          </label>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" required placeholder="Conte o que você precisa, para quem é o site e quais páginas ou recursos imagina."></textarea>
+          </label>
+          <button class="btn-primary" type="submit">Solicitar contato</button>
+        </form>
+        <div class="contact-aside">
+          <div class="contact-mini-card">
+            <span>resposta</span>
+            <strong>Melhor canal</strong>
+            <p>Para falar sobre criação de sites, preencha o formulário ou envie uma mensagem direta pelo LinkedIn.</p>
+          </div>
+          <a class="btn-ghost email-fallback" href="https://www.linkedin.com/messaging/compose/?recipient=thyfani-xavier-4b6904142" target="_blank" rel="noreferrer">Chamar no LinkedIn →</a>
+        </div>
+      </div>
+      <div class="social-grid">
+        <a href="https://www.linkedin.com/in/thyfani-xavier-4b6904142/" target="_blank" rel="noreferrer">
+          <strong>LinkedIn</strong>
+          <span>perfil profissional →</span>
+        </a>
+        <a href="https://github.com/thyfanixs" target="_blank" rel="noreferrer">
+          <strong>GitHub</strong>
+          <span>projetos e laboratório →</span>
+        </a>
+        <a href="https://medium.com/@thyfanixavier.321" target="_blank" rel="noreferrer">
+          <strong>Medium</strong>
+          <span>artigos sobre dados →</span>
+        </a>
+      </div>
+    </section>
+    <section class="page-thought gospel-thought"><span>o que sustenta meu caminho.</span><blockquote>“Eu sou o caminho, a verdade e a vida.”</blockquote><cite>— Jesus Cristo, João 14:6</cite></section>
+</main>
+
+  <footer class="site-footer">
+    <p>© 2026 <span class="accent">Thyfani Xavier</span></p>
+    <p>thyfani.com.br</p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
